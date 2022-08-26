@@ -2,8 +2,8 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { menuItems } from "../../constants/links"
 import { FooterStyles, FooterMenuStyles, CopyrightStyles } from "./FooterStyles"
-import useAllProduct from "../../hooks/use-all-product"
-import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
+// import useAllProduct from "../../hooks/use-all-product"
+// import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
 import {
   FaFacebookSquare as Facebook,
   FaTwitterSquare as Twitter,
@@ -12,8 +12,9 @@ import {
 } from "react-icons/fa"
 
 const Footer = () => {
-  const allProduct = useAllProduct()
-  const siteMeta = UseSiteMetadata()
+  // const allProduct = useAllProduct()
+  // const siteMeta = UseSiteMetadata()
+  const siteMeta = []
   return (
     <FooterStyles style={{ marginBottom: 0 }} className="section">
       <div className="container container__tight">
@@ -32,7 +33,7 @@ const Footer = () => {
             })}
           </ul>
         </FooterMenuStyles>
-        {allProduct.length > 0 && (
+        {/* {allProduct.length > 0 && (
           <FooterMenuStyles className="footer__menu products__menu">
             <h5>
               <Link to="/products">
@@ -54,7 +55,7 @@ const Footer = () => {
               })}
             </ul>
           </FooterMenuStyles>
-        )}
+        )} */}
 
         {siteMeta.twitterUsername ||
         siteMeta.facebookUsername ||

@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 import MenuContext from "../MenuContext"
 import { motion } from "framer-motion"
 import { menuItems } from "./NavConstants"
-import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
-import useFeaturedProduct from "../../hooks/use-featured-product"
+// import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
+// import useFeaturedProduct from "../../hooks/use-featured-product"
 import { FiChevronDown as Chevron } from "react-icons/fi"
 import {
   NavModuleStyles,
@@ -22,7 +22,10 @@ import {
 } from "./NavAnim"
 
 const NavModule = () => {
-  const featuredProduct = useFeaturedProduct()
+  // const featuredProduct = useFeaturedProduct()
+  // const { title } = UseSiteMetadata()
+  const { title } = 'title mock'
+  const featuredProduct = []
 
   const [isOpen, setNav] = useContext(MenuContext)
   const [subNavIsOpen, setSubNav] = useState(false)
@@ -35,7 +38,6 @@ const NavModule = () => {
     setSubNav((subNavIsOpen) => !subNavIsOpen)
   }
 
-  const { title } = UseSiteMetadata()
 
   return (
     <NavModuleStyles>
