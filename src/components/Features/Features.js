@@ -7,7 +7,26 @@ import Button from "../Button/Button"
 
 const Features = ({ title, introduction }) => {
   // const featuredProduct = useFeaturedProduct()
-  const featuredProduct = []
+  const featuredProduct = [
+    {
+      image: '../../../static/iphone.jpg',
+      title: 'Titulo 1',
+      introduction: 'Introducción 1',
+      path: '/products'
+    },
+    {
+      image: '../../../static/iphone.jpg',
+      title: 'Titulo 2',
+      introduction: 'Introducción 2',
+      path: '/products'
+    },
+    {
+      image: '../../../static/crypto-stock.png',
+      title: 'Titulo 3',
+      introduction: 'Introducción 3',
+      path: '/products'
+    }
+  ]
 
   return (
     <FeaturedProductsStyles className="section">
@@ -26,7 +45,7 @@ const Features = ({ title, introduction }) => {
         })}
       </div>
       <div className="container container__tight learn__more">
-        <Button as={Link} to="/products" text="All Products" />
+        <Button as={Link} to="/products" text="Ir a Productos" arrow />
       </div>
     </FeaturedProductsStyles>
   )

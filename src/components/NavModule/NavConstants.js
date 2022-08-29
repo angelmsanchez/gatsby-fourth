@@ -3,16 +3,16 @@ export const menuItems = [
     path: "/",
     text: "home",
   },
+  // {
+  //   path: "/about",
+  //   text: "about",
+  // },
   {
-    path: "/about",
-    text: "about",
-  },
-  {
-    path: "/news",
-    text: "news",
+    path: "/products",
+    text: "productos",
   },
   {
     path: "/contact",
-    text: "contact",
+    text: "contacto",
   },
 ]

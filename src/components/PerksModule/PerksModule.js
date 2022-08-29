@@ -17,11 +17,11 @@ const PerksModule = () => {
       <div className="perks__image--overlay"></div>
       <div className="container container__tight">
         <Perk
-          title="Built For Speed"
-          content="By using GatsbyJS, the Barcadia site is super-fast out of the box"
+          title="Convierta su inversion en criptoactivos"
+          content="Nos encargamos de procesar sus inversiones con un trato unico y personal, trabajamos con los mejores brokers y condiciones de criptomonedas."
         >
           <StaticImage
-            src="../../../static/logos/gatsby-logo.svg"
+            src="../../../static/crypto-stock.png"
             alt="Perk Image"
             layout="constrained"
             placeholder="tracedSVG"
@@ -31,11 +31,11 @@ const PerksModule = () => {
           <Cross />
         </span>
         <Perk
-          title="Built For Content"
-          content="Contentful helps you edit your application with ease as your business expands"
+          title="Comprar o vender grandes volumenes de Bitcoins"
+          content="Trabajamos con los mejores brokers y una excelente liquidez del mercado actual mientras construimos un puente entre el hoy y el futuro de tus inversiones."
         >
           <StaticImage
-            src="../../../static/logos/contentful-logo.svg"
+            src="../../../static/types.jpg"
             alt="Perk Image"
             layout="constrained"
             placeholder="tracedSVG"

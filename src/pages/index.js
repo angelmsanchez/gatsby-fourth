@@ -4,9 +4,9 @@ import Seo from "../components/SEO"
 import BannerModule from "../components/BannerModule/BannerModule"
 import BasicTextModule from "../components/BasicTextModule/BasicTextModule"
 import PerksModule from "../components/PerksModule/PerksModule"
-import Perk from "../components/PerksModule/Perk"
+// import Perk from "../components/PerksModule/Perk"
 import Features from "../components/Features/Features"
-import LatestPosts from "../components/Post/LatestPosts"
+// import LatestPosts from "../components/Post/LatestPosts"
 
 const Index = () => {
   return (
@@ -14,29 +14,29 @@ const Index = () => {
       <Seo title="Home" />
       <Layout>
         <BannerModule
-          title="Crypto Exchange"
-          subTitle="Primer exchange físico de criptomonedas con sede en las mas importantes ciudades de España."
+          title="Crypto Inversiones Brokerage"
+          subTitle="Un puente seguro entre  inversores y brokers de criptomonedas, servicio integral y personalizado para nuestros clientes xon."
         />
         <BasicTextModule
-          title="A super-fast theme that is easy to get started, using the power of
-            GatsbyJS"
-          content="Using modern CSS properties such as grid, this theme is optmised for
-            speed and mobile devices. Giving users an excellent experience on
-            any device. Future-proofing your product."
+          title="Conectamos criptoactivos construyendo el futuro."
+          content="Un equipo de profesionales ofreciendo las mejores condiciones y herramientas."
           link="/products"
-          linkText="View Products"
+          linkText="Ver Productos"
         />
         <PerksModule>
-          <Perk title="The Title" content="The content" />
+          {/* <Perk
+            title="Convierta su inversion en criptoactivos con los mejores."
+            content="Nos encargamos de procesar sus inversiones con un trato unico y personal, trabajamos con los mejores brokers y condiciones de criptomonedas a nivel global."
+          /> */}
         </PerksModule>
         <Features
-          title="Featured Products from Barcadia."
-          introduction="Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas."
+          title="Genere su portfolio en confianza."
+          introduction="A diferencia de otras casas de intercambio, Cryptoinver te asegura respuestas y atencion de calidad humana."
         />
-        <LatestPosts
-          title="The Latest from Barcadia"
-          introduction="Cras scelerisque, tellus sed gravida tincidunt, velit tellus blandit justo, nec viverra augue erat in erat. Maecenas iaculis sed purus non fringilla."
-        />
+        {/* <LatestPosts
+          title="Comprar o vender grandes volumenes de Bitcoins"
+          introduction="Trabajamos con los mejores brokers y una excelente liquidez del mercado actual mientras construimos un puente entre el hoy y el futuro de tus inversiones."
+        /> */}
       </Layout>
     </>
   )

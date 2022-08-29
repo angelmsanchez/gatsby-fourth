@@ -6,14 +6,15 @@ const Contact = () => {
   return (
     <ContactStyles className="section">
       <form name="contact" netlify>
-        <input placeholder="Your name..." type="text" name="name" />
-        <input placeholder="Your email..." type="email" name="email" />
+        <input placeholder="Nombre" type="text" name="name" />
+        <input placeholder="Teléfono" type="phone" name="phone" />
+        <input placeholder="Email" type="email" name="email" />
         <textarea
-          placeholder="Your message..."
+          placeholder="Mensaje"
           name="message"
           rows="5"
         ></textarea>
-        <Button text="Send Message" />
+        <Button text="Enviar" arrow />
       </form>
     </ContactStyles>
   )

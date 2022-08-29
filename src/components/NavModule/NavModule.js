@@ -24,8 +24,8 @@ import {
 const NavModule = () => {
   // const featuredProduct = useFeaturedProduct()
   // const { title } = UseSiteMetadata()
-  const { title } = 'title mock'
-  const featuredProduct = []
+  const title = 'Crypto Inversiones Brokerage'
+  // const featuredProduct = []
 
   const [isOpen, setNav] = useContext(MenuContext)
   const [subNavIsOpen, setSubNav] = useState(false)
@@ -96,7 +96,7 @@ const NavModule = () => {
               </Link>
             </li>
           ))}
-          {featuredProduct && (
+          {/* {featuredProduct && (
             <li className={subNavIsOpen ? "open" : "closed"}>
               <button
                 type="button"
@@ -139,7 +139,7 @@ const NavModule = () => {
                 })}
               </SubNavStyles>
             </li>
-          )}
+          )} */}
         </NavTopLevel>
       </motion.div>
     </NavModuleStyles>

@@ -5,14 +5,14 @@ export const menuItems = [
   },
   {
     path: "/products",
-    text: "products",
+    text: "productos",
   },
-  {
-    path: "/blogs",
-    text: "blog",
-  },
+  // {
+  //   path: "/blogs",
+  //   text: "blog",
+  // },
   {
     path: "/contact",
-    text: "contact",
+    text: "contacto",
   },
 ]

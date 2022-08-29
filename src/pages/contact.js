@@ -10,7 +10,7 @@ const contact = () => {
     <>
       <Seo title="Contact" />
       <Layout>
-        <SimpleBanner title="Get in touch">
+        <SimpleBanner title="Contacta con nosotros o solicita una videoconferencia">
           <StaticImage
             className="banner__image"
             src="../../static/macbook-dark.jpg"
