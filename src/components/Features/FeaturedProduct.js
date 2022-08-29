@@ -7,17 +7,31 @@ import { FeaturedProductStyles } from "./FeaturesStyles"
 
 const FeaturedProduct = ({ feature }) => {
   const { path, title, introduction, image } = feature
-  console.log('image', image);
+
   return (
     <FeaturedProductStyles>
       <Link to={path}>
-        <StaticImage
-          // src={image}
-          // src="../../../static/coins.jpg"
-          src="../../../static/iphone.jpg"
-          className="features__item--img"
-          alt="Producto Imagen"
-        />
+        {image === 'iphone' && (
+          <StaticImage
+            src="../../../static/iphone.jpg"
+            className="features__item--img"
+            alt="Producto Imagen"
+          />
+        )}
+        {image === 'coins' && (
+          <StaticImage
+            src="../../../static/coins.jpg"
+            className="features__item--img"
+            alt="Producto Imagen"
+          />
+        )}
+        {image === 'crypto' && (
+          <StaticImage
+            src="../../../static/crypto-stock.png"
+            className="features__item--img"
+            alt="Producto Imagen"
+          />
+        )}
         {title && introduction && (
           <div className="features__item--content">
             {title && <h4>{title}</h4>}

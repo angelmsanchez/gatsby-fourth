@@ -2,26 +2,24 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { FeaturedProductsStyles } from "./FeaturesStyles"
 import FeaturedProduct from "./FeaturedProduct"
-// import useFeaturedProduct from "../../hooks/use-featured-product"
 import Button from "../Button/Button"
 
 const Features = ({ title, introduction }) => {
-  // const featuredProduct = useFeaturedProduct()
   const featuredProduct = [
     {
-      image: '../../../static/iphone.jpg',
+      image: 'iphone',
       title: 'Titulo 1',
       introduction: 'Introducción 1',
       path: '/products'
     },
     {
-      image: '../../../static/iphone.jpg',
+      image: 'coins',
       title: 'Titulo 2',
       introduction: 'Introducción 2',
       path: '/products'
     },
     {
-      image: '../../../static/crypto-stock.png',
+      image: 'crypto',
       title: 'Titulo 3',
       introduction: 'Introducción 3',
       path: '/products'
