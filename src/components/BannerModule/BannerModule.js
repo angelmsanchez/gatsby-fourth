@@ -1,16 +1,10 @@
 import * as React from "react"
-import { Link, navigate } from "gatsby"
+import { Link } from "gatsby"
 import { BannerModuleStyles } from "./BannerModuleStyles"
 import { StaticImage } from "gatsby-plugin-image"
 import Button from "../Button/Button"
 
 const BannerModule = ({ children, title, subTitle, price, enquire }) => {
-
-  const scrollToArea = () => {
-    console.log('scrollToArea');
-    navigate("/contact")
-  }
-
   return (
     <>
       <BannerModuleStyles>
@@ -20,7 +14,7 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
           <StaticImage
             className="banner__image"
             imgClassName="banner__image--content"
-            src="../../assets/bitcoin-black.png"
+            src="../../../static/bitcoin-black.png"
             alt="Banner Image"
             layout="fullWidth"
             placeholder="blurred"
