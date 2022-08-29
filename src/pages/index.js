@@ -14,8 +14,8 @@ const Index = () => {
       <Seo title="Home" />
       <Layout>
         <BannerModule
-          title="Welcome to Barcadia"
-          subTitle="Using a combination of Gatsby and Contentful, Barcadia is ready to deploy and simple to use."
+          title="Crypto Exchange"
+          subTitle="Primer exchange físico de criptomonedas con sede en las mas importantes ciudades de España."
         />
         <BasicTextModule
           title="A super-fast theme that is easy to get started, using the power of

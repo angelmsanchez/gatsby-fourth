@@ -4,6 +4,8 @@ export const BannerModuleStyles = styled.section`
   height: 100vh;
   position: relative;
   padding: 30px var(--borderSpacing);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .container {
     height: 100%;
