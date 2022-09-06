@@ -1,15 +1,15 @@
-import React, { useContext, useState } from "react"
+import React, { useContext } from "react"
 import { Link } from "gatsby"
 import MenuContext from "../MenuContext"
 import { motion } from "framer-motion"
 import { menuItems } from "./NavConstants"
 // import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
 // import useFeaturedProduct from "../../hooks/use-featured-product"
-import { FiChevronDown as Chevron } from "react-icons/fi"
+// import { FiChevronDown as Chevron } from "react-icons/fi"
 import {
   NavModuleStyles,
   NavTopLevel,
-  SubNavStyles,
+  // SubNavStyles,
   HamburgerStyles,
   LogoStyles,
 } from "./NavModuleStyles"
@@ -18,7 +18,7 @@ import {
   barTwoVariants,
   barThreeVariants,
   menuList,
-  subMenuNavVariants,
+  // subMenuNavVariants,
 } from "./NavAnim"
 
 const NavModule = () => {
@@ -28,16 +28,15 @@ const NavModule = () => {
   // const featuredProduct = []
 
   const [isOpen, setNav] = useContext(MenuContext)
-  const [subNavIsOpen, setSubNav] = useState(false)
+  // const [subNavIsOpen, setSubNav] = useState(false)
 
   const toggleNav = () => {
     setNav((isOpen) => !isOpen)
   }
 
-  const toggleSubNav = () => {
-    setSubNav((subNavIsOpen) => !subNavIsOpen)
-  }
-
+  // const toggleSubNav = () => {
+  //   setSubNav((subNavIsOpen) => !subNavIsOpen)
+  // }
 
   return (
     <NavModuleStyles>

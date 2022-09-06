@@ -6,9 +6,12 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "build:deploy": "gatsby build && npm run deploy:prod",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "gatsby develop -o",
+    "deploy": "netlify deploy",
+    "deploy:prod": "netlify deploy --prod",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
