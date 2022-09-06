@@ -1,6 +1,7 @@
 import * as React from "react"
-import Layout from "../components/Layout"
 import { Link } from "gatsby"
+
+import Layout from "../components/Layout"
 import Seo from "../components/SEO"
 import Button from "../components/Button/Button"
 
@@ -11,13 +12,13 @@ const error = () => {
       <Layout>
         <div className="section">
           <div className="container container__tight">
-            <h1>Sorry.</h1>
-            <h3>This page has moved or no longer exists.</h3>
+            <h1>Perdonanos</h1>
+            <h3>Esta página ha sido eliminada o no exite.</h3>
             <p>
-              Please choose another option from the menu above, or to return
-              home, press the button below.
+              Por favor elige otra opcion desde el menu o vuelve a la pantalla
+              inicial presieonando el siquiente boton.
             </p>
-            <Button text="Return Home" to="/" as={Link} />
+            <Button text="Volver a la Home" to="/" as={Link} />
           </div>
         </div>
       </Layout>

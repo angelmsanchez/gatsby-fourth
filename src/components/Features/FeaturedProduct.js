@@ -11,21 +11,21 @@ const FeaturedProduct = ({ feature }) => {
   return (
     <FeaturedProductStyles>
       <Link to={path}>
-        {image === 'iphone' && (
+        {image === "iphone" && (
           <StaticImage
             src="../../../static/iphone.jpg"
             className="features__item--img"
             alt="Producto Imagen"
           />
         )}
-        {image === 'coins' && (
+        {image === "coins" && (
           <StaticImage
             src="../../../static/coins.jpg"
             className="features__item--img"
             alt="Producto Imagen"
           />
         )}
-        {image === 'crypto' && (
+        {image === "crypto" && (
           <StaticImage
             src="../../../static/crypto-stock.png"
             className="features__item--img"

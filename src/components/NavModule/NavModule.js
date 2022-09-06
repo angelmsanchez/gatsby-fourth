@@ -24,7 +24,7 @@ import {
 const NavModule = () => {
   // const featuredProduct = useFeaturedProduct()
   // const { title } = UseSiteMetadata()
-  const title = 'Crypto Inversiones Brokerage'
+  const title = "Crypto Inversiones Brokerage"
   // const featuredProduct = []
 
   const [isOpen, setNav] = useContext(MenuContext)

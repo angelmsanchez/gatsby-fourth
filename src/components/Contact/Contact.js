@@ -1,42 +1,27 @@
 import * as React from "react"
+import { navigate } from "gatsby"
 
 import Button from "../Button/Button"
 import { ContactStyles } from "./ContactStyles"
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
-
 const Contact = () => {
-  const [state, setState] = React.useState({});
-
-  const handleChange = (e) => {
-    setState({ [e.target.name]: e.target.value });
-  };
-
   const handleSubmit = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    console.log('form', form);
+    e.preventDefault()
+    let myForm = document.getElementById("contact")
+    let formData = new FormData(myForm)
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...state
-      })
+      body: new URLSearchParams(formData).toString(),
     })
-      .then(() => {
-        console.log('then');
-      })
-      .catch(error => alert(error));
-  };
+      .then(() => navigate(myForm.getAttribute("action")))
+      .catch((error) => alert(error))
+  }
 
   return (
     <ContactStyles className="section">
       <form
+        id="contact"
         name="contact"
         method="post"
         action="/success"
@@ -44,18 +29,15 @@ const Contact = () => {
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
       >
-        <input placeholder="Nombre" type="text" name="name" onChange={handleChange} />
-        <input placeholder="Teléfono" type="phone" name="phone" onChange={handleChange} />
-        <input placeholder="Email" type="email" name="email" onChange={handleChange} />
-        <textarea
-          placeholder="Mensaje"
-          name="message"
-          rows="5"
-          onChange={handleChange}
-        ></textarea>
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
+        <input placeholder="Nombre" type="text" name="name" />
+        <input placeholder="Teléfono" type="phone" name="phone" />
+        <input placeholder="Email" type="email" name="email" />
+        <textarea placeholder="Mensaje" name="message" rows="5"></textarea>
         <Button text="Enviar" arrow />
       </form>
-    </ContactStyles >
+    </ContactStyles>
   )
 }
 

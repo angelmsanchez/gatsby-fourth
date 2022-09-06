@@ -7,23 +7,23 @@ import Button from "../Button/Button"
 const Features = ({ title, introduction }) => {
   const featuredProduct = [
     {
-      image: 'iphone',
-      title: 'Titulo 1',
-      introduction: 'Introducción 1',
-      path: '/products'
+      image: "iphone",
+      title: "Titulo 1",
+      introduction: "Introducción 1",
+      path: "/products",
     },
     {
-      image: 'coins',
-      title: 'Titulo 2',
-      introduction: 'Introducción 2',
-      path: '/products'
+      image: "coins",
+      title: "Titulo 2",
+      introduction: "Introducción 2",
+      path: "/products",
     },
     {
-      image: 'crypto',
-      title: 'Titulo 3',
-      introduction: 'Introducción 3',
-      path: '/products'
-    }
+      image: "crypto",
+      title: "Titulo 3",
+      introduction: "Introducción 3",
+      path: "/products",
+    },
   ]
 
   return (
