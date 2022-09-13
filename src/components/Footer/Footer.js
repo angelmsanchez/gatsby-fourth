@@ -3,9 +3,8 @@ import { Link } from "gatsby"
 import { menuItems } from "../../constants/links"
 import { FooterStyles, FooterMenuStyles, CopyrightStyles } from "./FooterStyles"
 import {
-  FaFacebookSquare as Facebook,
-  FaTwitterSquare as Twitter,
-  FaInstagram as Instagram,
+  FaTelegramPlane as TelegramPlane,
+  FaWhatsapp as Whatsapp,
 } from "react-icons/fa"
 
 const Footer = () => {
@@ -20,7 +19,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link to={item.path} activeClassName="menu__item--active">
                     {item.text}
-                    <span>.</span>
+                    {/* <span>.</span> */}
                   </Link>
                 </li>
               )
@@ -52,34 +51,26 @@ const Footer = () => {
         )} */}
         <FooterMenuStyles className="footer__menu social__menu">
           <h5>
-            Siguenos<span>.</span>
+            Siguenos
+            {/* <span>.</span> */}
           </h5>
           <ul>
             <li>
               <a
-                href={`https://www.twitter.com/`}
+                href="https:/t.me/Cryptobankservices"
                 target="_blank"
                 rel="nofollow noreferrer noopener"
               >
-                <Twitter />
+                <TelegramPlane />
               </a>
             </li>
             <li>
               <a
-                href={`https://www.facebook.com/`}
+                href="https://wa.me/+34634135182"
                 target="_blank"
                 rel="nofollow noreferrer noopener"
               >
-                <Facebook />
-              </a>
-            </li>
-            <li>
-              <a
-                href={`https://www.instagram.com/`}
-                target="_blank"
-                rel="nofollow noreferrer noopener"
-              >
-                <Instagram />
+                <Whatsapp />
               </a>
             </li>
           </ul>

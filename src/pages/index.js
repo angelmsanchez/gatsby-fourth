@@ -15,7 +15,7 @@ const Index = () => {
       <Layout>
         <BannerModule
           title="Crypto Inversiones Brokerage"
-          subTitle="Un puente seguro entre  inversores y brokers de criptomonedas, servicio integral y personalizado para nuestros clientes xon."
+          subTitle="Un puente seguro entre  inversores y brokers de criptomonedas, servicio integral y personalizado para nuestros clientes."
         />
         <BasicTextModule
           title="Conectamos criptoactivos construyendo el futuro."

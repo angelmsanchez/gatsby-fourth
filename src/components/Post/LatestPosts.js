@@ -15,7 +15,7 @@ const LatestPosts = ({ title, introduction }) => {
             {title && (
               <h2>
                 {title}
-                <span>.</span>
+                {/* <span>.</span> */}
               </h2>
             )}
             {introduction && <p>{introduction}</p>}

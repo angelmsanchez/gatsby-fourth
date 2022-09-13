@@ -68,7 +68,7 @@ const NavModule = () => {
             <LogoStyles>
               <Link to="/">
                 {title}
-                <span>.</span>
+                {/* <span>.</span> */}
               </Link>
             </LogoStyles>
           )}
@@ -91,7 +91,7 @@ const NavModule = () => {
                 activeClassName="menu__item--active"
               >
                 {item.text}
-                <span>.</span>
+                {/* <span>.</span> */}
               </Link>
             </li>
           ))}

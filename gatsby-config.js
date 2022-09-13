@@ -8,15 +8,15 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: "Barcadia",
+    title: "Crypto bank services",
     description: "A super-fast site using GatsbyJS",
     author: "Morgan Baker",
-    twitterUsername: "barcadia",
-    facebookUsername: "barcadia",
-    instagramUsername: "barcadia",
+    twitterUsername: "Crypto bank services",
+    facebookUsername: "Crypto bank services",
+    instagramUsername: "Crypto bank services",
     linkedinUsername: "morgan-baker-development",
     image: "/macbook-color.jpg",
-    siteUrl: "https://barcadia.netlify.com",
+    siteUrl: "https://Cryptobankservices.netlify.com",
     developerName: "Morgan Baker Development",
     developerUrl: "https://www.morganbaker.dev",
   },
@@ -35,8 +35,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://barcadia.netlify.com",
-        sitemap: "https://barcadia.netlify.com/sitemap.xml",
+        host: "https://Cryptobankservices.netlify.com",
+        sitemap: "https://Cryptobankservices.netlify.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },

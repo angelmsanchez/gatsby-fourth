@@ -1,19 +1,19 @@
 {
-  "name": "barcadia",
+  "name": "crypto-bank-services",
   "private": true,
   "description": "A super-fast site using GatsbyJS",
-  "version": "2.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
     "build:deploy": "gatsby build && npm run deploy:prod",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "deploy:prod": "netlify deploy --prod",
+    "deploy": "netlify deploy",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "gatsby develop -o",
-    "deploy": "netlify deploy",
-    "deploy:prod": "netlify deploy --prod",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
+    "start": "gatsby develop -o",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
@@ -47,9 +47,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bagseye/barcadia"
+    "url": "https://github.com/bagseye/Crypto bank services"
   },
   "bugs": {
-    "url": "https://github.com/bagseye/barcadia/issues"
+    "url": "https://github.com/bagseye/Crypto bank services/issues"
   }
 }
