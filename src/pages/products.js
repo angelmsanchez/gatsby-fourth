@@ -11,18 +11,18 @@ const Products = () => {
       <Layout>
         <BannerModule
           title="Productos Crypto Inversiones Brokerage"
-          subTitle="Un puente seguro entre  inversores y brokers de criptomonedas, servicio integral y personalizado para nuestros clientes."
+          subTitle="Un puente seguro entre  inversores y brokers de criptomonedas, servicio integral y personalizado para nuestros clientes"
         />
         <BasicTextModule
-          title="Conectados a los mejores exchanges OTC."
-          content="Para ofrecerte siempre los mejores precios y evitar fluctuaciones del momento."
+          title="Conectados a los mejores exchanges OTC"
+          content="Para ofrecerte siempre los mejores precios y evitar fluctuaciones del momento"
           link="/contact"
           linkText="Contactanos"
         />
         <BasicTextModule
           title="Otros Servicios:"
           content="Bots de inversión, Apertura de cuentas, estructuras de ahorro fiscal para su empresa, pasarelas de pago..etc
-          Servicios de consultoría para ofrecerles la mejor solución."
+          Servicios de consultoría para ofrecerles la mejor solución"
           link="/contact"
           linkText="Contactanos"
         />

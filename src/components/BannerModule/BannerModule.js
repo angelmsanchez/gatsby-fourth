@@ -26,7 +26,7 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
             {title && (
               <h1>
                 {title}
-                <span style={{ color: "var(--primary)" }}>.</span>
+                {/* <span style={{ color: "var(--primary)" }}>.</span> */}
               </h1>
             )}
             {subTitle && <h2>{subTitle}</h2>}

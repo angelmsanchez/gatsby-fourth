@@ -78,7 +78,7 @@ const Footer = () => {
       </div>
       <CopyrightStyles>
         <div className="container container__tight">
-          <p>Crypto Inversiones Brokerage 2022.</p>
+          <p>Crypto Inversiones Brokerage 2022</p>
         </div>
       </CopyrightStyles>
     </FooterStyles>
