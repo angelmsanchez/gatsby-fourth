@@ -51,7 +51,7 @@ const Footer = () => {
         )} */}
         <FooterMenuStyles className="footer__menu social__menu">
           <h5>
-            Siguenos
+            O bien contáctanos directamente:
             {/* <span>.</span> */}
           </h5>
           <ul>
@@ -78,7 +78,7 @@ const Footer = () => {
       </div>
       <CopyrightStyles>
         <div className="container container__tight">
-          <p>Crypto Inversiones Brokerage 2022</p>
+          <p>Crypto Bank Services 2022</p>
         </div>
       </CopyrightStyles>
     </FooterStyles>

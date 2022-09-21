@@ -1,5 +1,7 @@
 import React, { useContext } from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+
 import MenuContext from "../MenuContext"
 import { motion } from "framer-motion"
 import { menuItems } from "./NavConstants"
@@ -24,7 +26,7 @@ import {
 const NavModule = () => {
   // const featuredProduct = useFeaturedProduct()
   // const { title } = UseSiteMetadata()
-  const title = "Crypto Inversiones Brokerage"
+  const title = "Crypto Bank Services"
   // const featuredProduct = []
 
   const [isOpen, setNav] = useContext(MenuContext)
@@ -42,6 +44,21 @@ const NavModule = () => {
     <NavModuleStyles>
       <div className="nav">
         <div className="container">
+
+          {title && (
+            <LogoStyles>
+              <StaticImage
+                src="../../../static/logo_transparent.png"
+                className="features__item--img"
+                alt="Cryto bank services"
+              />
+              <Link to="/">
+                {title}
+                {/* <span>.</span> */}
+              </Link>
+            </LogoStyles>
+          )}
+
           <HamburgerStyles
             initial="closed"
             animate={isOpen ? "open" : "closed"}
@@ -63,15 +80,6 @@ const NavModule = () => {
               variants={barThreeVariants}
             ></motion.span>
           </HamburgerStyles>
-
-          {title && (
-            <LogoStyles>
-              <Link to="/">
-                {title}
-                {/* <span>.</span> */}
-              </Link>
-            </LogoStyles>
-          )}
         </div>
       </div>
       <motion.div

@@ -14,7 +14,7 @@ const Index = () => {
       <Seo title="Home" />
       <Layout>
         <BannerModule
-          title="Crypto Inversiones Brokerage"
+          title="Crypto Bank Services"
           subTitle="Un puente seguro entre  inversores y brokers de criptomonedas, servicio integral y personalizado para nuestros clientes"
         />
         <BasicTextModule

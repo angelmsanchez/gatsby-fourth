@@ -10,7 +10,7 @@ const Products = () => {
       <Seo title="Productos" />
       <Layout>
         <BannerModule
-          title="Productos Crypto Inversiones Brokerage"
+          title="Productos Crypto Bank Services"
           subTitle="Un puente seguro entre  inversores y brokers de criptomonedas, servicio integral y personalizado para nuestros clientes"
         />
         <BasicTextModule

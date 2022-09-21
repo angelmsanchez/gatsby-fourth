@@ -160,9 +160,16 @@ export const HamburgerStyles = styled(motion.button)`
 `
 
 export const LogoStyles = styled.div`
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 20px;
   letter-spacing: -0.5px;
+
+  img {
+    width: 120px;
+    margin-top: 10px;
+  }
 
   a {
     color: #fff;
