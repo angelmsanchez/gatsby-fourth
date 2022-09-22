@@ -167,8 +167,8 @@ export const LogoStyles = styled.div`
   letter-spacing: -0.5px;
 
   img {
-    width: 120px;
-    margin-top: 10px;
+    width: 120px !important;
+    margin-top: 10px !important;
   }
 
   a {
