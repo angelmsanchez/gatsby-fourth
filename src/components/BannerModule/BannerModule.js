@@ -45,7 +45,7 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
                   to="/contact"
                 />
               )}
-              <Button as={Link} to="/contact" text="Aprenda Más" arrow />
+              {/* <Button as={Link} to="/contact" text="Aprenda Más" arrow /> */}
             </div>
           </div>
         </div>

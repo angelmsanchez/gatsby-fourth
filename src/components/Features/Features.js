@@ -1,8 +1,8 @@
 import * as React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { FeaturedProductsStyles } from "./FeaturesStyles"
 import FeaturedProduct from "./FeaturedProduct"
-import Button from "../Button/Button"
+// import Button from "../Button/Button"
 
 const Features = ({ title, introduction }) => {
   const featuredProduct = [
@@ -42,9 +42,9 @@ const Features = ({ title, introduction }) => {
           return <FeaturedProduct feature={node} key={index} />
         })}
       </div>
-      <div className="container container__tight learn__more">
+      {/* <div className="container container__tight learn__more">
         <Button as={Link} to="/products" text="Ir a Productos" arrow />
-      </div>
+      </div> */}
     </FeaturedProductsStyles>
   )
 }

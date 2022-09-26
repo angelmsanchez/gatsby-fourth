@@ -5,8 +5,9 @@ import BannerModule from "../components/BannerModule/BannerModule"
 import BasicTextModule from "../components/BasicTextModule/BasicTextModule"
 import PerksModule from "../components/PerksModule/PerksModule"
 // import Perk from "../components/PerksModule/Perk"
-// import Features from "../components/Features/Features"
+import Features from "../components/Features/Features"
 // import LatestPosts from "../components/Post/LatestPosts"
+import Contact from "../components/Contact/Contact"
 
 const Index = () => {
   return (
@@ -29,14 +30,15 @@ const Index = () => {
             content="Nos encargamos de procesar sus inversiones con un trato unico y personal, trabajamos con los mejores brokers y condiciones de criptomonedas a nivel global"
           /> */}
         </PerksModule>
-        {/* <Features
+        <Features
           title="Genere su portfolio en confianza"
           introduction="A diferencia de otras casas de intercambio, Cryptoinver te asegura respuestas y atencion de calidad humana"
-        /> */}
+        />
         {/* <LatestPosts
           title="Comprar o vender grandes volumenes de Bitcoins"
           introduction="Trabajamos con los mejores brokers y una excelente liquidez del mercado actual mientras construimos un puente entre el hoy y el futuro de tus inversiones"
         /> */}
+        <Contact />
       </Layout>
     </>
   )

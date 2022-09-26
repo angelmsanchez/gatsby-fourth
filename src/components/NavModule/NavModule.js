@@ -12,13 +12,13 @@ import {
   NavModuleStyles,
   NavTopLevel,
   // SubNavStyles,
-  HamburgerStyles,
+  // HamburgerStyles,
   LogoStyles,
 } from "./NavModuleStyles"
 import {
-  barOneVariants,
-  barTwoVariants,
-  barThreeVariants,
+  // barOneVariants,
+  // barTwoVariants,
+  // barThreeVariants,
   menuList,
   // subMenuNavVariants,
 } from "./NavAnim"
@@ -59,7 +59,7 @@ const NavModule = () => {
             </LogoStyles>
           )}
 
-          <HamburgerStyles
+          {/* <HamburgerStyles
             initial="closed"
             animate={isOpen ? "open" : "closed"}
             onClick={toggleNav}
@@ -79,7 +79,7 @@ const NavModule = () => {
               className="bar"
               variants={barThreeVariants}
             ></motion.span>
-          </HamburgerStyles>
+          </HamburgerStyles> */}
         </div>
       </div>
       <motion.div

@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import PostItems from "./PostItems"
-import PostItem from "./PostItem"
+// import PostItem from "./PostItem"
 // import useLatestBlogPost from "../../hooks/use-latest-blog-post"
 import Button from "../Button/Button"
 

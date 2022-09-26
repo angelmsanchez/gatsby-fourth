@@ -1,7 +1,7 @@
 import * as React from "react"
-import Button from "../Button/Button"
+// import Button from "../Button/Button"
 import { BasicTextModuleStyles } from "./BasicTextModuleStyles"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 const BasicTextModule = ({ title, content, link, linkText }) => {
   return (
@@ -11,7 +11,7 @@ const BasicTextModule = ({ title, content, link, linkText }) => {
           {title && <h2>{title}</h2>}
           {content && <p style={{ marginBottom: "60px" }}>{content}</p>}
 
-          <Button text={linkText} as={Link} to={link} />
+          {/* <Button text={linkText} as={Link} to={link} /> */}
         </div>
       </div>
     </BasicTextModuleStyles>
